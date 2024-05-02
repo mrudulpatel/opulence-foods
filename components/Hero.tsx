@@ -24,7 +24,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="relative size-full">
+      <div className="relative size-full hidden lg:block">
         <Image
           src={
             "/product1.jpg"
