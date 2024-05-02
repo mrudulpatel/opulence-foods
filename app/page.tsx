@@ -1,14 +1,15 @@
+import About from "@/components/About";
+import ContactUs from "@/components/ContactUs";
 import Hero from "@/components/Hero";
-import NavBar from "@/components/Navbar";
+import HomeMenu from "@/components/HomeMenu";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col">
-        <NavBar />
-        <Hero />
-        {/* About Us */}
-        {/* Best Products */}
-        {/* Footer */}
-    </main>
+    <>
+      <Hero />
+      <HomeMenu />
+      <About />
+      <ContactUs />
+    </>
   );
 }
