@@ -14,7 +14,7 @@ const Header = () => {
     {href: "#contact", title: "Contact"},
   ];
 
-  const isMobile = window.navigator.userAgent.includes("Mobile");
+  const isMobile = typeof window !== "undefined" && window.navigator.userAgent.includes("Mobile");
   return (
     <header className="flex items-center justify-between">
       <Link
