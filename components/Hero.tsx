@@ -14,7 +14,7 @@ const Hero = () => {
           &#x301D;Snack Your Way to Bliss: Completing Everyday Joys!&#x301E;
         </p>
       </div>
-      <div className="relative size-full">
+      <div className="relative size-full hidden lg:block">
         <Image
           src={
             "/product1.jpg"
