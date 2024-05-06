@@ -4,5 +4,5 @@ type MenuCardItem = {
     image: string;
     title: string;
     description: string;
-    price: number;
+    price: string;
 }

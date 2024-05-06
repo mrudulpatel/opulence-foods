@@ -10,43 +10,43 @@ const HomeMenu = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
         <MenuCard
           image="/product1.jpg"
-          title="Product to be added"
+          title="Coming soon..."
           description={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda adipisci ex corrupti esse veritatis molestiae! Dignissimos assumenda neque placeat odit. Adipisci nulla animi quas dolorum, incidunt veritatis neque dolor!"
+            "Coming Soon..."
           }
-          price={100}
+          price={"..."}
+        />
+        <MenuCard
+          image="/product2.jpg"
+          title="Coming soon..."
+          description={
+            "Coming Soon..."
+          }
+          price={"..."}
         />
         <MenuCard
           image="/product1.jpg"
-          title="Product to be added"
+          title="Coming soon..."
           description={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda adipisci ex corrupti esse veritatis molestiae! Dignissimos assumenda neque placeat odit. Adipisci nulla animi quas dolorum, incidunt veritatis neque dolor!"
+            "Coming Soon..."
           }
-          price={100}
+          price={"..."}
+        />
+        <MenuCard
+          image="/product2.jpg"
+          title="Coming soon..."
+          description={
+            "Coming Soon..."
+          }
+          price={"..."}
         />
         <MenuCard
           image="/product1.jpg"
-          title="Product to be added"
+          title="Coming soon..."
           description={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda adipisci ex corrupti esse veritatis molestiae! Dignissimos assumenda neque placeat odit. Adipisci nulla animi quas dolorum, incidunt veritatis neque dolor!"
+            "Coming Soon..."
           }
-          price={100}
-        />
-        <MenuCard
-          image="/product1.jpg"
-          title="Product to be added"
-          description={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda adipisci ex corrupti esse veritatis molestiae! Dignissimos assumenda neque placeat odit. Adipisci nulla animi quas dolorum, incidunt veritatis neque dolor!"
-          }
-          price={100}
-        />
-        <MenuCard
-          image="/product1.jpg"
-          title="Product to be added"
-          description={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda adipisci ex corrupti esse veritatis molestiae! Dignissimos assumenda neque placeat odit. Adipisci nulla animi quas dolorum, incidunt veritatis neque dolor!"
-          }
-          price={100}
+          price={"..."}
         />
       </div>
     </section>
