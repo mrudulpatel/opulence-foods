@@ -21,7 +21,7 @@ const MenuCard = ({ image, title, description, type }: Product) => {
         height={679}
         objectFit="cover"
       />
-      <h4 className="font-semibold my-2 text-2xl">{title}</h4>
+      <h4 className="font-semibold my-2 text-2xl text-white">{title}</h4>
       <p className=" text-lg">{description}</p>
       <button className=" bg-primary group-hover:text-ecru transition-colors  shadow-sm px-8 text-white rounded-full py-2 !mt-4">
         <Link href={`/products/${title.split(" ").join("-").toLowerCase()}`}>
