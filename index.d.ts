@@ -1,8 +1,9 @@
 declare module "@heroicons/*";
 
-type MenuCardItem = {
-    image: string;
+type Product = {
+    productId?: string;
+    type?: "popular" | "new" | "regular";
     title: string;
     description: string;
-    price: string;
-}
+    image: string;
+};

@@ -1,53 +1,25 @@
-import Image from "next/image";
 import React from "react";
 import MenuCard from "./MenuCard";
 import SectionTitle from "./SectionTitle";
+import { products } from "@/constants";
 
 const HomeMenu = () => {
   return (
     <section id="popular-products" className="mt-8">
-      <SectionTitle subTitle="Check Out Our" title="Popular Products" />
+      <SectionTitle subTitle="Check Out Our" title="Popular Products And Newly Launched Products" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
-        <MenuCard
-          image="/product1.jpg"
-          title="Coming soon..."
-          description={
-            "Coming Soon..."
-          }
-          price={"..."}
-        />
-        <MenuCard
-          image="/product2.jpg"
-          title="Coming soon..."
-          description={
-            "Coming Soon..."
-          }
-          price={"..."}
-        />
-        <MenuCard
-          image="/product1.jpg"
-          title="Coming soon..."
-          description={
-            "Coming Soon..."
-          }
-          price={"..."}
-        />
-        <MenuCard
-          image="/product2.jpg"
-          title="Coming soon..."
-          description={
-            "Coming Soon..."
-          }
-          price={"..."}
-        />
-        <MenuCard
-          image="/product1.jpg"
-          title="Coming soon..."
-          description={
-            "Coming Soon..."
-          }
-          price={"..."}
-        />
+        {products?.map(
+          (product) =>
+            (product.type === "popular" || product.type === "new") && (
+              <MenuCard
+                description={product.description.split(".")[0] + "."}
+                image={product.image}
+                key={product?.productId}
+                title={product.title}
+                type={product.type}
+              />
+            )
+        )}
       </div>
     </section>
   );

@@ -17,11 +17,11 @@ const Hero = () => {
       <div className="relative size-full hidden lg:block">
         <Image
           src={
-            "/product1.jpg"
+            "/multi-super-seed-mix.png"
             // "https://github.com/dejwid/food-ordering/blob/master/public/pizza.png?raw=true"
           }
-          width={659}
-          height={550}
+          width={454}
+          height={681}
           alt="hero_image"
         />
       </div>

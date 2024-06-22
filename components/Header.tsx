@@ -8,10 +8,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const mobileLinks = [
     {href: "/", title: "Home"},
-    {href: "#popular-products", title: "Popular Products"},
+    {href: "/#popular-products", title: "Popular Products"},
     {href: "/products", title: "All Products"},
-    {href: "#about", title: "About"},
-    {href: "#contact", title: "Contact"},
+    {href: "/#about", title: "About"},
+    {href: "/#contact", title: "Contact"},
   ];
 
   const isMobile = typeof window !== "undefined" && window.navigator.userAgent.includes("Mobile");
