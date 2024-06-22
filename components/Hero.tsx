@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="relative size-full hidden lg:block">
         <Image
           src={
-            "/multi-super-seed-mix.png"
+            "/blueberries-dried-and-whole.png"
             // "https://github.com/dejwid/food-ordering/blob/master/public/pizza.png?raw=true"
           }
           width={454}
