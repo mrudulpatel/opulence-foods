@@ -10,7 +10,7 @@ const ProductPage = ({ params }: { params: { productId: string } }) => {
 
   const handleClick = () => {
     window.open(
-      `https://api.whatsapp.com/send?phone=+919850958109&text=Hello, I am interested in your product ${product?.title}.`,
+      `https://api.whatsapp.com/send?phone=+917774896073&text=Hello, I am interested in your product ${product?.title}.`,
       "_blank"
     );
   };
@@ -18,10 +18,17 @@ const ProductPage = ({ params }: { params: { productId: string } }) => {
   if (!product) return null;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
+    <div className="grid grid-cols-1 md:grid-cols-1 items-center justify-center">
       <div className="flex items-center justify-center p-10">
         <Image
-          src={product?.image}
+          src={product?.images[0]}
+          alt={product?.title}
+          width={452}
+          height={679}
+          objectFit="cover"
+        />
+        <Image
+          src={product?.images[1]}
           alt={product?.title}
           width={452}
           height={679}

@@ -1,7 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import AutoPlay from "embla-carousel-autoplay";
 
-const MenuCard = ({ image, title, description, type }: Product) => {
+const MenuCard = ({ images, title, description, type }: Product) => {
   return (
     <div className="bg-oldRose p-4 shadow-xl text-xl rounded-lg text-center hover:bg-ecru transition-colors group">
       {type === "new" && (
@@ -14,13 +22,29 @@ const MenuCard = ({ image, title, description, type }: Product) => {
           Popular
         </span>
       )}
-      <Image
-        src={image}
-        alt={title}
-        width={452}
-        height={679}
-        objectFit="cover"
-      />
+      <Carousel
+        plugins={[
+          AutoPlay({
+            delay: 3000,
+          }),
+        ]}
+
+      >
+        <CarouselContent>
+          {images.map((image, index) => (
+            <CarouselItem key={index} className="rounded-lg">
+              <Image
+                src={image.toString()}
+                alt={title}
+                width={452}
+                height={679}
+                className="rounded-lg"
+                objectFit="cover"
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
       <h4 className="font-semibold my-2 text-2xl text-white">{title}</h4>
       <p className=" text-lg">{description}</p>
       <button className=" bg-primary group-hover:text-ecru transition-colors  shadow-sm px-8 text-white rounded-full py-2 !mt-4">

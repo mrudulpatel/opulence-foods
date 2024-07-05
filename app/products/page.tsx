@@ -11,7 +11,7 @@ const ProductsPage = () => {
         {products?.map((product) => (
           <MenuCard
             description={product.description.split('. ')[0]+"."}
-            image={product.image}
+            images={product.images}
             key={product?.productId}
             title={product.title}
             type={product.type}
