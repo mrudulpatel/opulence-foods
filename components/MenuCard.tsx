@@ -6,6 +6,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import AutoPlay from "embla-carousel-autoplay";
 
@@ -22,14 +24,7 @@ const MenuCard = ({ images, title, description, type }: Product) => {
           Popular
         </span>
       )}
-      <Carousel
-        plugins={[
-          AutoPlay({
-            delay: 3000,
-          }),
-        ]}
-
-      >
+      <Carousel>
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index} className="rounded-lg">
