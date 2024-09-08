@@ -34,7 +34,7 @@ className="border-2 border-black"
           width={452}
           height={679}
           objectFit="cover"
-className="border-2 border-black
+className="border-2 border-black"
         />
       </div>
       <div className="p-4">
