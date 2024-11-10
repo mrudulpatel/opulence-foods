@@ -19,13 +19,14 @@ const ProductPage = ({ params }: { params: { productId: string } }) => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-1 items-center justify-center">
-      <div className="flex items-center justify-center p-10">
+      <div className="flex items-center justify-center p-10 gap-5">
         <Image
           src={product?.images[0]}
           alt={product?.title}
           width={452}
           height={679}
           objectFit="cover"
+className="border-2 border-black"
         />
         <Image
           src={product?.images[1]}
@@ -33,6 +34,7 @@ const ProductPage = ({ params }: { params: { productId: string } }) => {
           width={452}
           height={679}
           objectFit="cover"
+className="border-2 border-black"
         />
       </div>
       <div className="p-4">
